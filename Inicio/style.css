@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {font-family: "Roboto", serif;
+   padding: 0;
+   margin: 0;
+   background: #1D1D1D;
+ 
+}
+body{
+    overflow-x: hidden
+}
+
+.section{
+    background-image: url(../assets/Img\ pagina\ principal/the-last-of-us.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.img-icone{
+    width: 35px;
+    margin-top: 25px;
+    margin-left: -283px;
+    margin-right: 300px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 350px;
+    margin-left: 320px;
+    margin-right: 0;
+    background: transparent;
+    z-index: 4;
+}
+
+.link-header{
+    display: block;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: 55px;
+    color: white;
+    font-weight: 700;
+    background: transparent;
+}
+
+#inicio{
+    text-decoration: underline 3px;
+}
+
+#sport{
+    display:flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: 29px;
+    margin-right: -46px;
+    width: 23px;
+    cursor: pointer;
+    background: transparent;
+}
+
+#input-central{
+    display: none;
+    position: relative;
+    top: 80px;
+    left: 45px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    outline-style: none;
+    width: 90%;
+    padding: 19px;
+    margin-right: 0px;
+    margin-bottom: 2px;
+    border-radius: 8px;
+    border: none;
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out, visibility 0.9s ease-in-out;
+}
+#input-central::placeholder{
+    font-weight: 700;
+    font-size: 17px;
+    color: white;
+    opacity: 1;
+}
+
+#search{
+    width: 30px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+#saved{
+    width: 30px;
+    cursor: pointer;
+}
+
+#perfil{
+    cursor: pointer;
+}
+
+
+.info-filme{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    position: relative;
+    top: -195px;
+    left: 30px;
+    background-color: transparent;
+}
+
+#title{
+    position: relative;
+    top: -140px;
+    margin-left: -8px;
+    width: 400px;
+    background: transparent;
+    z-index: 1;
+    
+}
+
+.classificação{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -145px;
+    gap: 10px;
+    background-color: transparent;}
+
+.jornada{
+    position: relative;
+    top: -140px;
+    background-color: transparent;
+}
+
+
+#season{
+    color: white;
+    background: transparent;
+}
+
+.uhd{
+    color: white;
+    background: transparent;
+}
+
+.the-last{
+    font-weight: 400;
+    font-size: 16px;
+    width: 366px;
+    color: white;
+    margin: -190px 25px; 
+    background: transparent;
+}
+
+.button-p{
+    font-weight: 700;
+    margin-left: 23px;
+    margin-top: 206px;
+    background: transparent;
+    color: white;
+    border-radius: 6px;
+    width: 140px;
+    height: 41px;
+    background-color: rgba(96, 100, 123, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+#trailer{
+    background-color: transparent;
+}
+
+.button-p:hover{
+    
+    opacity: 0.9;
+    filter: brightness(1.8);
+}
+.button-p:active{
+    opacity: 0.7;
+    filter: brightness(2.0);
+}
+
+.container{
+    position: relative;
+    height: 41vh;
+    left: -32px;
+    top: -45px; 
+    margin: 0;
+}
+
+#sugestão{
+    position: relative;
+    top: 2px;
+    left: 53px;
+    background: transparent;
+    color: white;
+}
+
+#filmes-series{
+    position: relative;
+    height: 44vh;
+    top: 10px;
+    left: 51px;
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+    transition: transform 0.8s ease-in-out;
+}
+
+.img-filmes:hover{
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+    transform: scale(1.1);
+}
+
+#venom{
+    object-fit: cover
+}
+
+#avatar{
+    position: relative;
+    left: 17px;
+    margin-right: 18px;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 39px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 250px;
+    padding: 10px;
+    background: transparent;
+}
+
+#prev {
+    display: flex;
+    z-index: 11; 
+    left: -50px;
+    top: 44px;
+    padding: 108px;
+    padding-right: 24px;
+    padding-bottom: 152px;
+    margin: 0;
+}
+
+#next {
+    right: 0px;
+    display: flex;
+    top: 43px;
+    right: -120px;
+    padding: 108px;
+    padding-left: 12px;
+    padding-bottom: 153px;
+    margin: 0;
+}
