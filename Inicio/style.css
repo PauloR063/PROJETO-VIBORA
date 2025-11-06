@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {font-family: "Roboto", serif;
-   padding: 0;
-   margin: 0;
-   background: #1D1D1D;
- 
+* {
+    font-family: "Roboto", serif;
+    padding: 0;
+    margin: 0;
+    background: #1D1D1D;
+
 }
-body{
+
+body {
+    width: 100%;
+
     overflow-x: hidden
 }
 
-.section{
+.section {
     background-image: url(../assets/Img\ pagina\ principal/the-last-of-us.avif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,43 +24,52 @@ body{
 
 }
 
-.img-icone{
+.img-icone {
+    position: relative;
+    top: 10px;
     width: 35px;
-    margin-top: 25px;
-    margin-left: -283px;
-    margin-right: 300px;
     cursor: pointer;
     background-color: transparent;
 }
 
-header{
+header {
     display: flex;
-    position: fixed;
-    align-items: center;
-    gap: 0;
-    margin-bottom: 350px;
-    margin-left: 320px;
-    margin-right: 0;
+    flex-direction: row;
     background: transparent;
-    z-index: 4;
+    justify-content: space-around;
+    gap: 100px;
+    align-items: center;
 }
 
-.link-header{
-    display: block;
+.box-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+}
+
+.box-infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+}
+
+.link-header {
     text-decoration: none;
     margin-top: 25px;
-    margin-left: 55px;
+    margin-left: 30px;
     color: white;
     font-weight: 700;
     background: transparent;
 }
 
-#inicio{
+#inicio {
     text-decoration: underline 3px;
 }
 
-#sport{
-    display:flex;
+#sport {
+    display: flex;
     align-items: center;
     margin-top: 24px;
     margin-left: 29px;
@@ -66,7 +79,7 @@ header{
     background: transparent;
 }
 
-#input-central{
+#input-central {
     display: none;
     position: relative;
     top: 80px;
@@ -85,84 +98,87 @@ header{
     opacity: 1;
     transition: opacity 0.9s ease-in-out, visibility 0.9s ease-in-out;
 }
-#input-central::placeholder{
+
+#input-central::placeholder {
     font-weight: 700;
     font-size: 17px;
     color: white;
     opacity: 1;
 }
 
-#search{
-    width: 30px;
-    margin-left: 200px;
-    cursor: pointer;
-}
-
-#saved{
+#search {
     width: 30px;
     cursor: pointer;
 }
 
-#perfil{
+#saved {
+    width: 30px;
     cursor: pointer;
 }
 
+#perfil {
+    cursor: pointer;
+}
 
-.info-filme{
+.info-filme {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 17px;
-    position: relative;
+    width: 40%;
     top: -195px;
     left: 30px;
     background-color: transparent;
 }
 
-#title{
+#title {
     position: relative;
-    top: -140px;
-    margin-left: -8px;
-    width: 400px;
+    bottom: 130px;
+    right: 16px;
+    width: 390px;
     background: transparent;
     z-index: 1;
-    
 }
 
-.classificação{
+.classificação {
     display: flex;
+    width: 158px;
     align-items: center;
     position: relative;
-    top: -145px;
+    bottom: 140px;
+    right: 9px;
     gap: 10px;
-    background-color: transparent;}
-
-.jornada{
-    position: relative;
-    top: -140px;
     background-color: transparent;
 }
 
+.jornada {
+    position: relative;
+    background-color: transparent;
+    bottom: 144px;
+    right: 5px;
+}
 
-#season{
+
+#season {
     color: white;
     background: transparent;
 }
 
-.uhd{
+.uhd {
     color: white;
     background: transparent;
 }
 
-.the-last{
+.the-last {
     font-weight: 400;
     font-size: 16px;
     width: 366px;
     color: white;
-    margin: -190px 25px; 
+    margin: -190px 25px;
     background: transparent;
 }
 
-.button-p{
+.button-p {
     font-weight: 700;
     margin-left: 23px;
     margin-top: 206px;
@@ -176,29 +192,30 @@ header{
     cursor: pointer;
 }
 
-#trailer{
+#trailer {
     background-color: transparent;
 }
 
-.button-p:hover{
-    
+.button-p:hover {
+
     opacity: 0.9;
     filter: brightness(1.8);
 }
-.button-p:active{
+
+.button-p:active {
     opacity: 0.7;
     filter: brightness(2.0);
 }
 
-.container{
+.container {
     position: relative;
     height: 41vh;
     left: -32px;
-    top: -45px; 
+    top: -45px;
     margin: 0;
 }
 
-#sugestão{
+#sugestão {
     position: relative;
     top: 2px;
     left: 53px;
@@ -206,7 +223,7 @@ header{
     color: white;
 }
 
-#filmes-series{
+#filmes-series {
     position: relative;
     height: 44vh;
     top: 10px;
@@ -217,17 +234,17 @@ header{
     transition: transform 0.8s ease-in-out;
 }
 
-.img-filmes:hover{
+.img-filmes:hover {
     border-radius: 5px;
     border: 3px solid #ffffff;
     transform: scale(1.1);
 }
 
-#venom{
+#venom {
     object-fit: cover
 }
 
-#avatar{
+#avatar {
     position: relative;
     left: 17px;
     margin-right: 18px;
@@ -249,7 +266,7 @@ header{
 
 #prev {
     display: flex;
-    z-index: 11; 
+    z-index: 11;
     left: -50px;
     top: 44px;
     padding: 108px;
@@ -267,4 +284,35 @@ header{
     padding-left: 12px;
     padding-bottom: 153px;
     margin: 0;
+}
+
+@media screen and (max-width: 540px) {
+
+    header{
+        flex-flow: row wrap;
+    }
+
+    .box-links {
+        position: relative;
+        bottom: 100px;
+        right: 6px;
+        display: flex;
+        order: 1;
+    }
+
+    .link-header{
+        margin-left: 20px;
+    }
+
+    #search {
+        width: 24px;
+    }
+
+    #saved {
+        width: 24px;
+    }
+
+    #perfil {
+        width: 24px;
+    }
 }
