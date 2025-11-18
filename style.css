@@ -14,7 +14,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(./Login/Cadastro/img/background.jpg) no-repeat center center/cover;
+    background: url(./Login/Cadastro/img/background.jpg);
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -149,6 +152,7 @@ body {
 
 @media (max-width: 480px) {
     .container {
+        max-width: 340px;
         width: 100%;
         padding: 15px;
     }

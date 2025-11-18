@@ -1,53 +1,45 @@
-const slider = document.querySelector("#filmes-series");
-const slides = document.querySelectorAll(".img-filmes");
+const container = document.querySelector("#filmes-series");
+const wrapper = document.querySelector(".filmes-wrapper");
 const btnNext = document.getElementById("next");
 const btnPrev = document.getElementById("prev");
-let index = 0;
 
-// Função para atualizar o slider e controlar a visibilidade dos botões
-function updateSlider() {
-    slider.style.transform = `translateX(-${index * 100}%)`;
+let currentTranslate = 0;
+let slide = 400;
 
-    // Oculta o botão "prev" no primeiro slide
-    btnPrev.style.display = index === 0 ? "none" : "block";
-
+function updateLimits() {
+    containerWidth = container.offsetWidth;
+    wrapperWidth = wrapper.scrollWidth;
+    maxTranslate = containerWidth - wrapperWidth; // sempre negativo
 }
 
+updateLimits(); // calcula ao iniciar
+window.addEventListener("resize", updateLimits); // recalcula se a tela mudar
+
 btnNext.addEventListener("click", () => {
-    btnNext.style.display = "none"; // Esconde o botão
-  });
+    updateLimits();
+
+    if (currentTranslate > maxTranslate) {
+        currentTranslate -= slide;
+
+        // limite máximo
+        if (currentTranslate < maxTranslate) {
+            currentTranslate = maxTranslate;
+        }
+
+        wrapper.style.transform = `translateX(${currentTranslate}px)`;
+    }
+});
 
 btnPrev.addEventListener("click", () => {
-    btnNext.style.display = "block"; // Mostra o botão direito
-});
+    updateLimits();
 
-// Evento para avançar
-btnNext.addEventListener("click", () => {
-    if (index < slides.length - 1) {
-        index++;
-        updateSlider();
+    if (currentTranslate < 0) {
+        currentTranslate += slide;
+
+        // limite mínimo (começo)
+        if (currentTranslate > 0) {
+            currentTranslate = 0;
+        }
+        wrapper.style.transform = `translateX(${currentTranslate}px)`;
     }
 });
-
-// Evento para voltar
-btnPrev.addEventListener("click", () => {
-    if (index > 0) {
-        index--;
-        updateSlider();
-    }
-});
-
-// Inicializa o estado dos botões
-updateSlider();
-
-document.getElementById("search").addEventListener("click", function() {
-    let conteudo = document.getElementById("input-central");
-    if (conteudo.style.display === "none" || conteudo.style.display === "") {
-        conteudo.style.display = "flex"; // Exibe o conteúdo
-    } else {
-        conteudo.style.display = "none"; // Oculta o conteúdo
-    }
-});
-
-
-
