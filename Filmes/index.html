@@ -2,124 +2,132 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmes • Viper</title>
-    <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home • Viper</title>
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="section">
-        <header>
-            <img class="img-icone" src="../assets/Img pagina principal/Viper Vibora.png" alt="Viper">
+        <div class="section">
+                <header>
+                        <img class="img-icone" src="../assets/Img pagina principal/Viper Vibora.png" alt="Viper">
 
-            <a class="link-header" href="../Inicio/index.html">INICIO</a>
-            <a class="link-header" href="../Série/index.html">SÉRIE</a>
-            <a class="link-header" id="filme" href="">FILMES</a>
-            <a class="link-header" href="../Crianças e Familia/index.html">CRIANÇAS & FAMILIA</a>
+                        <div class="box-links">
+                                <a class="link-header" href="">INICIO</a>
+                                <a class="link-header" href="../Série/index.html">SÉRIE</a>
+                                <a class="link-header" id="filmes" href="../Filmes/index.html">FILMES</a>
+                                <a class="link-header" href="../Crianças e Familia/index.html">CRIANÇAS & FAMILIA</a>
+                        </div>
 
-            <img class="link-header" id="search" src="../assets/Img pagina principal/search.png" alt="search"
-                onclick="showInput()">
-            <img class="link-header" id="saved" src="../assets/Img pagina principal/save.webp" alt="saved">
-            <img class="link-header" id="perfil" src="../assets/Img pagina principal/Perfil.webp" alt="perfil">
-        </header>
+                        <div class="box-infos">
+                                <img class="link-header" id="search" src="../assets/Img pagina principal/search.png"
+                                        alt="search" onclick="showInput()">
+                                <img class="link-header" id="saved" src="../assets/Img pagina principal/save.webp"
+                                        alt="saved">
+                                <img class="link-header" id="perfil" src="../assets/Img pagina principal/Perfil.webp"
+                                        alt="perfil">
+                        </div>
 
-        <input id="input-central" type="text" placeholder="Encontre filmes, séries e muito mais">
+                </header>
+
+                <input id="input-central" type="text" placeholder="Encontre filmes, séries e muito mais">
+
+        </div>
 
         <div class="info-filme">
-                        
-            <img id="title" src="./assets/Godzilla/img/titulo.jpg" alt="">
-    
-        <div class="classificação">
-            <img class="img-a16" width="16" src="../assets/Img pagina principal/classificacao-14.png" alt="A16">
-            <p id="season">1 h 55m</p>
-            <span class="uhd">Ação/Ficção científica</span>  
+
+                <img id="title" src="../Filmes/assets/Godzilla/img/titulo.jpg" alt="">
+
+                <div class="classificação">
+                        <img class="img-a16" width="16" src="../assets/Img pagina principal/A16.png" alt="A16">
+                        <p id="season">1 h 55m</p>
+                        <span class="uhd">4K Ação/Ficção científica</span>
+                </div>
+
         </div>
-
-            <p id="sinopse">Godzilla e o todo-poderoso Kong enfrentam uma ameaça colossal escondida nas profundezas do planeta, desafiando a sua própria existência e a sobrevivência da raça humana.</p>
-
         <div class="jornada">
-            <a href="./assets/Godzilla/index.html" id="link-title"><button class="button-p">Assistir Agora</button></a>
-            <a href="https://youtu.be/2j5mZbhsSdM" target="_blank" id="trailer"><button class="button-p">
-                    Trailer</button></a>
+                <p class="the-last">Godzilla e o todo-poderoso Kong enfrentam uma ameaça colossal escondida nas
+                profundezas do planeta, desafiando a sua própria existência e a sobrevivência da raçahumana.</p>
+                <button class="button-p">Ir para Filme</button>
+                <a href="https://youtu.be/qqrpMRDuPfc" target="_blank" id="trailer"><button class="button-p">Assistir
+                                Trailer</button></a>
+        </div>
+        
+
+        <div class="container">
+
+                <h2 id="sugestão">Você também pode gostar </h2>
+
+                <button id="prev" class="nav-button">◀</button>
+
+                <div id="filmes-series">
+
+                        <div class="filmes-wrapper">
+                                <a href="../assets/Venom a Ultima Rodada/index.html"><img class="img-filmes" id="venom"
+                                        src="../assets/Img pagina principal/venom 2.jpg" 
+                                        alt="venom.png"></a>
+
+                                <a href="../assets/The Penguin/index.html"><img class="img-filmes"
+                                                src="../assets/Img pagina principal/penguin.jpg" 
+                                                alt="penguin.png"></a>
+
+                                <a href="../assets/Superman & Lois/index.html"><img class="img-filmes"
+                                                src="../assets/Img pagina principal/Superman.webp" 
+                                                alt="superman.png"></a>
+
+                                <a href="../assets/Batman/index.html"><img class="img-filmes"
+                                                src="../assets/Img pagina principal/batman.jpg" 
+                                                alt="batman"></a>
+
+                                <a href="../assets/Joker/index.html"><img class="img-filmes"
+                                                src="../assets/Img pagina principal/joker.jpg" 
+                                                alt="joker"></a>
+
+                                <a href="../assets/Gothan Knights/index.html"><img class="img-filmes"
+                                                src="../assets/Img pagina principal/gothan.jpg" 
+                                                alt="gothan"></a>
+
+                                <a href="../assets/Yu Yu Hakusho/index.html"><img class="img-filmes"
+                                                src="../assets/Img pagina principal/Yu_Yu_Hakusho.webp" 
+                                                alt="yu-yu-hakusho"></a>
+
+                                <a href="../assets/Avatar/index.html"><img class="img-filmes" id="avatar"
+                                                src="../assets/Avatar/assets/catalogo.jpg"
+                                                alt="avatar"></a>
+
+                                <a href="../assets/Sorria/index.html"><img class="img-filmes"
+                                                src="../assets/Sorria/assets/Sorria-catalago.jpg"
+                                                alt="sorria-2"></a>
+
+                                <a href="../assets/Divertidamente 2/index.html"><img class="img-filmes" id="Divertidamenet"
+                                                src="../assets/Divertidamente 2/assets/Divertida_Mente_2_Poster.webp"
+                                                alt="Divertidamente-2"></a>
+
+                                <a href="../assets/Sintonia/index.html"><img class="img-filmes"
+                                                src="../assets/Sintonia/assets/poster-sintonia.png"
+                                                alt="Sintonia"></a>
+
+                                <a href="../assets/La Casa de Papel/index.html"><img class="img-filmes"
+                                                src="../assets/La Casa de Papel/img/la-casa-de-papel-poster.jpg"
+                                                alt="la-casa-de-papel"></a>
+
+                                <a href="../assets/Korra/index.html"><img class="img-filmes"
+                                                src="../assets/Korra/img/poster-korra.jpg"
+                                                alt="Korra"></a>
+
+                                <a href="../assets/Terrifier 3/index.html"><img class="img-filmes"
+                                                src="../assets/Terrifier 3/img/Terrifier-poster.jpg"
+                                                alt="terrifier"></a>
+            
+
+                        </div>
+ 
+                </div> 
+
+                <button id="next" class="nav-button">▶</button>
+                
         </div>
 
-    </div>
-
-    <div class="container">
-
-        <h2 id="sugestão">Você também pode gostar </h2>
-
-
-        <button id="prev" class="nav-button">◀</button>
-
-        <div id="filmes-series">
-
-            <a href="./assets/Venom a Ultima Rodada/index.html"><img class="img-filmes" id="venom"
-                    src="./assets/Venom a Ultima Rodada/Img/venom 2.jpg" width="178px" height="250px" 
-                    alt="venom.png"></a>
-
-            <a href="./assets/Joker/index.html"><img class="img-filmes" 
-                    src="./assets/Joker/imgs/joker.jpg" width="178px" height="250px" 
-                    alt="joker"></a>
-
-            <a href="./assets/Sorria/index.html"><img class="img-filmes" 
-                    src="./assets/Sorria/assets/Sorria-catalago.jpg" width="178px" height="250px" 
-                    alt="sorria-2"></a>
-
-            <a href="./assets/Terrifier 3/index.html"><img class="img-filmes" 
-                    src="./assets/Terrifier 3/img/Terrifier-poster.jpg" width="178px" height="250px" 
-                    alt="terrifier"></a>
-
-            <a href="./assets/Kraven/index.html"><img class="img-filmes" 
-                    src="./assets/Kraven/img/poster.jpg" width="178px" height="250px" 
-                    alt="kraven"></a>
-
-            <a href="./assets/O Tarô da Morte/index.html"><img class="img-filmes" 
-                    src="./assets/O Tarô da Morte/img/poster.jpg" width="178px" height="250px" 
-                    alt="o-taro-da-morte"></a>
-
-            <a href="./assets/Avatar/index.html"><img class="img-filmes" 
-                    src="./assets/Avatar/img/poster.jpg" width="178px" height="250px" 
-                    alt="avatar"></a>
-
-            <a href="./assets/Vingadores Ultimato/index.html"><img class="img-filmes" id="vingadores"
-                    src="./assets/Vingadores Ultimato/img/poster.jpg" width="178px" height="250px" 
-                    alt="vingadores-ultimato"></a>
-
-            <a href="./assets/Star Wars/index.html"><img class="img-filmes"
-                    src="./assets/Star Wars/img/poster.jpg" width="178px" height="250px" 
-                    alt="star-wars"></a>
-
-            <a href="./assets/Velozes e Furiosos/index.html"><img class="img-filmes"
-                    src="./assets/Velozes e Furiosos/img/poster.jpg" width="178px" height="250px" 
-                    alt="velozes-e-furiosos-10"></a>
-
-            <a href=".././Filmes/assets/Amor de Aluguel/index.html"><img class="img-filmes"
-                    src=".././Filmes/assets/Amor de Aluguel/img/poster.avif" width="178px" height="250px" 
-                    alt="amor-de-aluguel"></a>
-
-            <a href=".././Filmes/assets/Bad Boys/index.html"><img class="img-filmes"
-                    src=".././Filmes/assets/Bad Boys/img/poster.avif" width="178px" height="250px" 
-                    alt="Bad-boys"></a>
-
-            <a href=".././Filmes/assets/Ele é Demais/index.html"><img class="img-filmes"
-                    src=".././Filmes/assets/Ele é Demais/img/poster.avif" width="178px" height="250px" 
-                    alt="Ele-é-Demias"></a>
-
-            <a href=".././Filmes/assets/quebrando Regras/index.html"><img class="img-filmes"
-                    src=".././Filmes/assets/Quebrando Regras/img/poster.avif" width="178px" height="250px" 
-                    alt="Quebrando-Regras"></a>
-
-
-        </div>
-
-        <button id="next" class="nav-button">▶</button>
-
-    </div>
-<script src="./script.js"></script>
+        <script src="./script.js"></script>
 </body>
-
-</html>
-
-    

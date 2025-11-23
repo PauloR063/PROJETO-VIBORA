@@ -67,17 +67,6 @@ header {
     text-decoration: underline 3px;
 }
 
-#sport {
-    display: flex;
-    align-items: center;
-    margin-top: 24px;
-    margin-left: 29px;
-    margin-right: -46px;
-    width: 23px;
-    cursor: pointer;
-    background: transparent;
-}
-
 #input-central {
     display: none;
     position: relative;
@@ -209,8 +198,8 @@ header {
 .container {
     display: flex;
     position: relative;
-    width: 100vw;
-    height: 33vh;
+    width: 100%;
+    height: 32%;
     flex-direction: column;
     left: -32px;
     bottom: 42px;
@@ -257,7 +246,7 @@ header {
 }
 
 .img-filmes:hover {
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
 }
 
 #prev{
