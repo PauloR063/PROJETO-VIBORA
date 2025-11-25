@@ -280,6 +280,12 @@ header {
     color: white; 
 }
 
+@media (min-height: 1366px) {
+    .container{
+        height: 18%;
+    }
+}
+
 @media screen and (max-width: 1280px) {
     #prev{
         display: none;
