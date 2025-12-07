@@ -1,129 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home • Viper</title>
-        <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Venom: The Last Dance • Viper</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-        <div class="section">
-                <header>
-                        <img class="img-icone" src="../../assets/Img pagina principal/Viper Vibora.png" alt="Viper">
+  <header class="site-header">
+    <div class="header-left">
+      <img class="logo" src="../../assets/Img pagina principal/Viper Vibora.png" alt="Viper logo">
+      <nav class="main-nav" aria-label="Main">
+        <a class="nav-link" href="../../Inicio/index.html">INICIO</a>
+        <a class="nav-link" href="../../Série/index.html">SÉRIE</a>
+        <a class="nav-link" href="../../Filmes/index.html">FILMES</a>
+        <a class="nav-link" href="../../Crianças e Familia/index.html">CRIANÇAS & FAMILIA</a>
+      </nav>
+    </div>
 
-                        <div class="box-links">
-                                <a class="link-header" href="../../Inicio/index.html">INICIO</a>
-                                <a class="link-header" href="../../Série/index.html">SÉRIE</a>
-                                <a class="link-header" href="../../Filmes/index.html">FILMES</a>
-                                <a class="link-header" href="../../Crianças e Familia/index.html">CRIANÇAS & FAMILIA</a>
-                        </div>
+    <div class="header-right">
+      <button id="btn-search" class="icon-btn" aria-label="Pesquisar">
+        <img src="../../assets/Img pagina principal/search.png" alt="">
+      </button>
+      <button class="icon-btn" aria-label="Favoritos">
+        <img src="../../assets/Img pagina principal/save.webp" alt="">
+      </button>
+      <button class="icon-btn" aria-label="Perfil">
+        <img src="../../assets/Img pagina principal/Perfil.webp" alt="">
+      </button>
+    </div>
+  </header>
 
-                        <div class="box-infos">
-                                <img class="link-header" id="search" src="../../assets/Img pagina principal/search.png"
-                                        alt="search" onclick="showInput()">
-                                <img class="link-header" id="saved" src="../../assets/Img pagina principal/save.webp"
-                                        alt="saved">
-                                <img class="link-header" id="perfil" src="../../assets/Img pagina principal/Perfil.webp"
-                                        alt="perfil">
-                        </div>
+  <!-- HERO -->
+  <main class="hero">
+    <div class="hero-bg" role="img" aria-label="Banner do filme" style="background-image:url('./Img/venom estreia.png')"></div>
+    <div class="hero-overlay"></div>
 
-                </header>
+    <div class="hero-content">
+      <img id="title" src="./Img/Titulo Venom.jpg" alt="Venom: The Last Dance - Título" class="title-img">
 
-                <input id="input-central" type="text" placeholder="Encontre filmes, séries e muito mais">
-
+      <div class="meta">
+        <div class="meta-left">
+          <img class="rating-img" src="../Img pagina principal/classificacao-14.png" alt="Classificação">
+          <span>1h 49</span>
+          <span>•</span>
+          <span>2024</span>
+          <span>•</span>
+          <span>Ação / Ficção científica</span>
         </div>
 
-        <div class="info-filme">
-
-                <img id="title" src="./Img/Titulo Venom.jpg" alt="">
-
-                <div class="classificação">
-                        <img class="img-a16" width="16" src="../../assets/Img pagina principal/A16.png" alt="A16">
-                        <p id="season">1 h 55m</p>
-                        <span class="uhd">4K Ação/Ficção científica</span>
-                </div>
-
+        <div class="meta-actions">
+          <button id="assistir" class="cta">▶ Assistir Agora</button>
         </div>
-        <div class="jornada">
-                <p class="the-last">Godzilla e o todo-poderoso Kong enfrentam uma ameaça colossal escondida nas
-                profundezas do planeta, desafiando a sua própria existência e a sobrevivência da raçahumana.</p>
-                <button class="button-p">Ir para Filme</button>
-                <a href="https://youtu.be/qqrpMRDuPfc" target="_blank" id="trailer"><button class="button-p">Assistir
-                                Trailer</button></a>
+      </div>
+
+      <p class="summary">Que comece o caos... uma última vez! Tom Hardy retorna como Eddie Brock na última parte da emocionante trilogia Venom.</p>
+    </div>
+  </main>
+
+  <!-- SUGESTÕES (SLIDER) -->
+  <section class="suggestions">
+    <h2>Você também pode gostar</h2>
+
+    <div class="slider" aria-label="Filmes recomendados">
+      <button id="prev" class="slider-btn" aria-label="Anterior" disabled>◀</button>
+
+      <div class="slider-viewport">
+        <div class="slider-track">
+          <!-- Repita/coloque os links das imagens que você já tem -->
+          <a class="card" href="../../assets/The Penguin/index.html"><img src="../../assets/Img pagina principal/penguin.jpg" alt="The Penguin"></a>
+          <a class="card" href="../../assets/Superman & Lois/index.html"><img src="../../assets/Img pagina principal/Superman.webp" alt="Superman & Lois"></a>
+          <a class="card" href="../../assets/Batman/index.html"><img src="../../assets/Img pagina principal/batman.jpg" alt="Batman"></a>
+          <a class="card" href="../../assets/Joker/index.html"><img src="../../assets/Img pagina principal/joker.jpg" alt="Joker"></a>
+          <a class="card" href="../../assets/Gothan Knights/index.html"><img src="../../assets/Img pagina principal/gothan.jpg" alt="Gothan Knights"></a>
+          <a class="card" href="../../assets/Yu Yu Hakusho/index.html"><img src="../../assets/Img pagina principal/Yu_Yu_Hakusho.webp" alt="Yu Yu Hakusho"></a>
+          <a class="card" href="../../assets/Avatar/index.html"><img src="../../assets/Avatar/assets/catalogo.jpg" alt="Avatar"></a>
+          <a class="card" href="../../assets/Sorria/index.html"><img src="../../assets/Sorria/assets/Sorria-catalago.jpg" alt="Sorria"></a>
+          <a class="card" href="../../assets/Divertidamente 2/index.html"><img src="../../assets/Divertidamente 2/assets/Divertida_Mente_2_Poster.webp" alt="Divertida Mente 2"></a>
+          <a class="card" href="../../assets/Sintonia/index.html"><img src="../../assets/Sintonia/assets/poster-sintonia.png" alt="Sintonia"></a>
+          <a class="card" href="../../assets/La Casa de Papel/index.html"><img src="../../assets/La Casa de Papel/img/la-casa-de-papel-poster.jpg" alt="La Casa de Papel"></a>
+          <a class="card" href="../../assets/Korra/index.html"><img src="../../assets/Korra/img/poster-korra.jpg" alt="Korra"></a>
+          <a class="card" href="../../assets/Terrifier 3/index.html"><img src="../../assets/Terrifier 3/img/Terrifier-poster.jpg" alt="Terrifier 3"></a>
         </div>
-        
+      </div>
 
-        <div class="container">
+      <button id="next" class="slider-btn" aria-label="Próximo">▶</button>
+    </div>
+  </section>
 
-                <h2 id="sugestão">Você também pode gostar </h2>
-
-                <button id="prev" class="nav-button">◀</button>
-
-                <div id="filmes-series">
-
-                        <div class="filmes-wrapper">
-                                <a href="../../assets/The Penguin/index.html"><img class="img-filmes"
-                                                src="../../assets/Img pagina principal/penguin.jpg" 
-                                                alt="penguin.png"></a>
-
-                                <a href="../../assets/Superman & Lois/index.html"><img class="img-filmes"
-                                                src="../../assets/Img pagina principal/Superman.webp" 
-                                                alt="superman.png"></a>
-
-                                <a href="../../assets/Batman/index.html"><img class="img-filmes"
-                                                src="../../assets/Img pagina principal/batman.jpg" 
-                                                alt="batman"></a>
-
-                                <a href="../../assets/Joker/index.html"><img class="img-filmes"
-                                                src="../../assets/Img pagina principal/joker.jpg" 
-                                                alt="joker"></a>
-
-                                <a href="../../assets/Gothan Knights/index.html"><img class="img-filmes"
-                                                src="../../assets/Img pagina principal/gothan.jpg" 
-                                                alt="gothan"></a>
-
-                                <a href="../../assets/Yu Yu Hakusho/index.html"><img class="img-filmes"
-                                                src="../../assets/Img pagina principal/Yu_Yu_Hakusho.webp" 
-                                                alt="yu-yu-hakusho"></a>
-
-                                <a href="../../assets/Avatar/index.html"><img class="img-filmes" id="avatar"
-                                                src="../../assets/Avatar/assets/catalogo.jpg"
-                                                alt="avatar"></a>
-
-                                <a href="../../assets/Sorria/index.html"><img class="img-filmes"
-                                                src="../../assets/Sorria/assets/Sorria-catalago.jpg"
-                                                alt="sorria-2"></a>
-
-                                <a href="../../assets/Divertidamente 2/index.html"><img class="img-filmes" id="Divertidamenet"
-                                                src="../../assets/Divertidamente 2/assets/Divertida_Mente_2_Poster.webp"
-                                                alt="Divertidamente-2"></a>
-
-                                <a href="../../assets/Sintonia/index.html"><img class="img-filmes"
-                                                src="../../assets/Sintonia/assets/poster-sintonia.png"
-                                                alt="Sintonia"></a>
-
-                                <a href="../../assets/La Casa de Papel/index.html"><img class="img-filmes"
-                                                src="../../assets/La Casa de Papel/img/la-casa-de-papel-poster.jpg"
-                                                alt="la-casa-de-papel"></a>
-
-                                <a href="../../assets/Korra/index.html"><img class="img-filmes"
-                                                src="../../assets/Korra/img/poster-korra.jpg"
-                                                alt="Korra"></a>
-
-                                <a href="../../assets/Terrifier 3/index.html"><img class="img-filmes"
-                                                src="../../assets/Terrifier 3/img/Terrifier-poster.jpg"
-                                                alt="terrifier"></a>
-            
-
-                        </div>
- 
-                </div> 
-
-                <button id="next" class="nav-button">▶</button>
-                
-        </div>
-
-        <script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
+</html>
