@@ -31,7 +31,7 @@ function calcStep() {
   const gap = getGap();
   if (!cardW) return viewport.clientWidth * 0.8;
   const visibleCount = Math.max(1, Math.floor(viewport.clientWidth / (cardW + gap)));
-  return visibleCount * (cardW + gap);
+  return 300;
 }
 
 function updateButtons() {

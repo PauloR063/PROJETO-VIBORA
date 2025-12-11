@@ -1,117 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joker: Folie à Deux • Viper</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coringa • Viper</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="section">
-        <header>
-            <img class="img-icone" src="../Img pagina principal/Viper Vibora.png" alt="Viper">
-
-            <a class="link-header" href="../../Inicio/index.html">INICIO</a>
-            <a class="link-header" href="../../Série/index.html">SÉRIE</a>
-            <a class="link-header" href="../../Filmes/index.html">FILMES</a>
-            <a class="link-header" href="../../Crianças e Familia/index.html">CRIANÇAS & FAMILIA</a>
-
-            <img class="link-header" id="search" src="../Img pagina principal/search.png" alt="search"
-                onclick="showInput()">
-            <img class="link-header" id="saved" src="../Img pagina principal/save.webp" alt="saved">
-            <img class="link-header" id="perfil" src="../Img pagina principal/Perfil.webp" alt="perfil">
-        </header>
-
-        <div class="title-filme">
-            <img id="title" src="./imgs/Title 2.jpg" alt="">
-        </div>
-
-        <div class="info-filme">
-
-            <img src="./imgs/C16.png" width="21" alt="">
-            <p class="categoria">1 h 07 min</p>
-            <p class="categoria">2024</p>
-            <p class="categoria">4K UHD</p>
-        </div>
-
-        <button id="assistir">▶ Assistir Agora</button>
-        <p id="resumo">Coringa: Delírio a Dois encontra Arthur Fleck internado em Arkham, aguardando julgamento por seus
-            crimes como o Coringa.</p>
-
+  <header class="site-header">
+    <div class="header-left">
+      <img class="logo" src="../../assets/Img pagina principal/Viper Vibora.png" alt="Viper logo">
+      <nav class="main-nav" aria-label="Main">
+        <a class="nav-link" href="../../Inicio/index.html">INICIO</a>
+        <a class="nav-link" href="../../Série/index.html">SÉRIE</a>
+        <a class="nav-link" href="../../Filmes/index.html">FILMES</a>
+        <a class="nav-link" href="../../Crianças e Familia/index.html">CRIANÇAS & FAMILIA</a>
+      </nav>
     </div>
 
-        <div class="container">
-
-        <button id="prev" class="nav-button">◀</button>
-
-            <h2 id="sugestão">Você também pode gostar </h2>
-
-            <div id="filmes-series">
-                <a href="../Venom a Ultima Rodada/index.html"><img class="img-filmes" id="venom"
-                        src="../Venom a Ultima Rodada/Img/venom 2.jpg" width="178px" height="250px" 
-                        alt="venom.png"></a>
-
-                <a href="../The Penguin/index.html"><img class="img-filmes" 
-                        src="../Img pagina principal/penguin.jpg" width="178px" height="250px" 
-                        alt="penguin.png"></a>
-
-                <a href="../Superman & Lois/index.html"><img class="img-filmes" 
-                        src="../Img pagina principal/Superman.webp"width="178px" height="250px" 
-                        alt="superman.png"></a>
-
-                <a href="../Batman/index.html"><img class="img-filmes" 
-                        src="../Img pagina principal/batman.jpg"width="178px" height="250px" 
-                        alt="batman"></a>
-
-                <a href="../Gothan Knights/index.html"><img class="img-filmes" 
-                        src="../Img pagina principal/gothan.jpg"width="178px" height="250px" 
-                        alt="gothan"></a>
-
-                <a href="../Yu Yu Hakusho/index.html"><img class="img-filmes" 
-                        src="../Img pagina principal/Yu_Yu_Hakusho.webp"width="178px" height="250px" 
-                        alt="yu-yu-hakusho"></a>
-
-                <a href="../Avatar/index.html"><img class="img-filmes" id="avatar" 
-                        src="../Avatar/assets/catalogo.jpg"width="178px" height="250px" 
-                        alt="avatar"></a>
-
-                <a href="../Sorria/index.html"><img class="img-filmes" id="smile" 
-                        src="../Sorria/assets/Sorria-catalago.jpg"width="178px" height="250px" 
-                        alt="sorria-2"></a>
-
-                <a href="../Divertidamente 2/index.html"><img class="img-filmes" 
-                        src="../Divertidamente 2/assets/Divertida_Mente_2_Poster.webp"width="178px" height="250px" 
-                        alt="Divertidamente-2"></a>
-
-                <a href="../Sintonia/index.html"><img class="img-filmes" 
-                        src="../Sintonia/assets/poster-sintonia.png" width="178px" height="250px" 
-                        alt="Sintonia"></a>
-
-                <a href="../Stranger Things/index.html"><img class="img-filmes" 
-                        src="../Stranger Things/img/poster-stranger.webp" width="178px" height="250px" 
-                        alt="Stranger-things"></a>
-
-                <a href="../La Casa de Papel/index.html"><img class="img-filmes" 
-                        src="../La Casa de Papel/img/la-casa-de-papel-poster.jpg" width="178px" height="250px" 
-                        alt="la-casa-de-papel"></a>
-
-                <a href="../Korra/index.html"><img class="img-filmes" 
-                        src="../Korra/img/poster-korra.jpg" width="178px" height="250px" 
-                        alt="A-lenda-de-Korra"></a>
-
-                <a href="../Terrifier 3/index.html"><img class="img-filmes" 
-                        src="../Terrifier 3/img/Terrifier-poster.jpg"width="178px" height="250px" 
-                        alt="terrifier"></a>
-
-            </div>
-
-        <button id="next" class="nav-button">▶</button>
-
+    <div class="header-right">
+      <button id="btn-search" class="icon-btn" aria-label="Pesquisar">
+        <img src="../../assets/Img pagina principal/search.png" alt="">
+      </button>
+      <button class="icon-btn" aria-label="Favoritos">
+        <img src="../../assets/Img pagina principal/save.webp" alt="">
+      </button>
+      <button class="icon-btn" aria-label="Perfil">
+        <img src="../../assets/Img pagina principal/Perfil.webp" alt="">
+      </button>
     </div>
-    <br>
-    <script src="./script.js"></script>
+  </header>
+
+  <!-- HERO -->
+  <main class="hero">
+    <div class="hero-bg" role="img" aria-label="Banner do filme" style="background-image:url('./imgs/Coringa2-Poster.jpg')"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <img id="title" src="./imgs/Title 2.jpg" alt="Venom: The Last Dance - Título" class="title-img">
+
+      <div class="meta">
+        <div class="meta-left">
+          <img class="rating-img" src="../Img pagina principal/A16.png" alt="Classificação">
+          <span>2h 2m</span>
+          <span>•</span>
+          <span>2019</span>
+          <span>•</span>
+          <span>Crime / Thriller</span>
+        </div>
+
+        <div class="meta-actions">
+          <button id="assistir" class="cta">▶ Assistir Agora</button>
+        </div>
+      </div>
+
+      <p class="summary">Isolado, intimidado e desconsiderado pela sociedade, o fracassado comediante Arthur Fleck inicia seu caminho como uma mente criminosa após assassinar três homens em pleno metrô. Sua ação inicia um movimento popular contra a elite de Gotham City, da qual Thomas Wayne é seu maior representante.</p>
+    </div>
+  </main>
+
+  <!-- SUGESTÕES (SLIDER) -->
+  <section class="suggestions">
+    <h2>Você também pode gostar</h2>
+
+    <div class="slider" aria-label="Filmes recomendados">
+      <button id="prev" class="slider-btn" aria-label="Anterior" disabled>◀</button>
+
+      <div class="slider-viewport">
+        <div class="slider-track">
+          <a class="card" href="../../assets/The Penguin/index.html"><img src="../../assets/The Penguin/Img/penguin.jpg" alt="The Penguin"></a>
+          <a class="card" href="../../assets/Superman & Lois/index.html"><img src="../../assets/Superman & Lois/img/Superman.webp" alt="Superman & Lois"></a>
+          <a class="card" href="../../assets/Venom a Ultima Rodada/index.html"><img src="../../assets/Venom a Ultima Rodada/Img/venom 2.jpg" alt="Batman"></a>
+          <a class="card" href="../../assets/Joker/index.html"><img src="../../assets/Joker/imgs/joker.jpg" alt="Joker"></a>
+          <a class="card" href="../../assets/Gothan Knights/index.html"><img src="../../assets/Gothan Knights/img/gothan.jpg" alt="Gothan Knights"></a>
+          <a class="card" href="../../assets/Yu Yu Hakusho/index.html"><img src="../../assets/Yu Yu Hakusho/img/Yu_Yu_Hakusho.webp" alt="Yu Yu Hakusho"></a>
+          <a class="card" href="../../assets/Avatar/index.html"><img src="../../assets/Avatar/img/catalogo.jpg" alt="Avatar"></a>
+          <a class="card" href="../../assets/Sorria/index.html"><img src="../../assets/Sorria/img/Sorria-catalago.jpg" alt="Sorria"></a>
+          <a class="card" href="../../assets/Divertidamente 2"><img src="../../assets/Divertidamente 2/img/Divertida_Mente_2_Poster.webp" alt="Divertida Mente 2"></a>
+          <a class="card" href="../../assets/Sintonia/index.html"><img src="../../assets/Sintonia/img/poster-sintonia.png" alt="Sintonia"></a>
+          <a class="card" href="../../assets/La Casa de Papel/index.html"><img src="../../assets/La Casa de Papel/img/la-casa-de-papel-poster.jpg" alt="La Casa de Papel"></a>
+          <a class="card" href="../../assets/Korra/index.html"><img src="../../assets/Korra/img/poster-korra.jpg" alt="Korra"></a>
+          <a class="card" href="../../assets/Terrifier 3/index.html"><img src="../../assets/Terrifier 3/img/Terrifier-poster.jpg" alt="Terrifier 3"></a>
+          <a class="card" href="../../assets/Stranger Things/index.html"><img src="../../assets/Stranger Things/img/poster-stranger.webp" alt="stranger-things"></a>
+        </div>
+      </div>
+
+      <button id="next" class="slider-btn" aria-label="Próximo">▶</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
